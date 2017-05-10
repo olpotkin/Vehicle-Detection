@@ -1,4 +1,4 @@
-**Vehicle Detection Project**
+## Vehicle Detection and Tracking Project
 
 The goals / steps of this project are the following:
 
@@ -18,17 +18,17 @@ The goals / steps of this project are the following:
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 
-All code for this project stores in Vehicle-Detection.ipynb IPython Notebook.
+All code for this project stored in Vehicle-Detection.ipynb IPython Notebook.
 
 Code consists of 2 main Pipelines:
 
-* Lane Lines Detection - **cells 1 - 15**
-* Vehicle Detection - **cells 16 - 22**
+* Lane Lines Detection (**cells 1 - 15**)
+* Vehicle Detection (**cells 16 - 22**)
 
 ---
 #### 0. Dataset
 
-Dataset includes::
+Dataset includes:
 
 * 8792 images with cars
 * 8968 images without cars
@@ -50,7 +50,7 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 ![alt text][image2]
 
-#### 2. Explain how you settled on your final choice of HOG parameters.
+#### 2. Final choice of HOG parameters
 
 I tried various combinations of parameters and settled with a stable set:
 
@@ -71,7 +71,7 @@ Tried different color spaces, but YCrCb shown best results.
 Increasing the ```orientation``` enhanced the accuarcy of the classifier, but increased computational time.
 
 
-####3. Train a classifier using selected HOG features and color features.
+#### 3. Train a classifier using selected HOG features and color features.
 
 The code for this step is contained in the code cell #18 of the IPython notebook.
 
