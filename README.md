@@ -12,8 +12,8 @@ The goals / steps of this project are the following:
 [image1]: ./output_images/image1.png
 [image2]: ./output_images/image2.png
 [image3]: ./output_images/image3.png
-[image6]: ./output_images/image4.png
-[image7]: ./output_images/image5.png
+[image4]: ./output_images/image4.png
+[image5]: ./output_images/image5.png
 [video1]: ./project_video_processed.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -26,7 +26,7 @@ Code consists of 2 main Pipelines:
 * Vehicle Detection - **cells 16 - 22**
 
 ---
-####0. Dataset
+#### 0. Dataset
 
 Dataset includes::
 
@@ -34,9 +34,9 @@ Dataset includes::
 * 8968 images without cars
 
 
-###Histogram of Oriented Gradients (HOG)
+### Histogram of Oriented Gradients (HOG)
 
-####1. Extract HOG features from the training images.
+#### 1. Extract HOG features from the training images.
 
 The code for this step is contained in the code cell #16 of the IPython notebook.
 
@@ -50,7 +50,7 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 ![alt text][image2]
 
-####2. Explain how you settled on your final choice of HOG parameters.
+#### 2. Explain how you settled on your final choice of HOG parameters.
 
 I tried various combinations of parameters and settled with a stable set:
 
@@ -81,9 +81,9 @@ The trained model had accuracy of 99.35% on test dataset.
 The trained model and parameters used for training were saved to pickle file to be further used by vehicle detection pipeline.
 
 
-###Sliding Window Search
+### Sliding Window Search
 
-####1. Sliding window search.
+#### 1. Sliding window search.
 
 For higher coverage of potential detections the multi-scale window approach was used. It's prevents calculation of feature vectors for the complete image and thus helps in speeding up the process.
 
@@ -97,7 +97,7 @@ The figure below shows the multiple scales under consideration overlapped on ima
 
 ![alt text][image3]
 
-####2. Examples of test images to demonstrate how pipeline is working.
+#### 2. Examples of test images to demonstrate how pipeline is working.
 
 Ultimately I searched on 3 scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.
 
@@ -116,7 +116,7 @@ Here's a [link to my video result on YouTube](https://www.youtube.com/watch?v=nr
 
 ---
 
-###Discussion
+### Discussion
 
 - Neural Network could show a higher precision.
 
