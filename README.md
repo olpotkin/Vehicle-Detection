@@ -87,7 +87,7 @@ The trained model and parameters used for training were saved to pickle file to 
 
 For higher coverage of potential detections the multi-scale window approach was used. It's prevents calculation of feature vectors for the complete image and thus helps in speeding up the process.
 
-| Scale 1       | Scale 1       | Scale 1       |
+| Scale 1       | Scale 2       | Scale 3       |
 |:-------------:|:-------------:|:-------------:|
 | ystart = 380  | ystart = 400  | ystart = 500  |
 | ystop = 480   | ystop = 600   | ystop = 700   |
