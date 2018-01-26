@@ -52,7 +52,7 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 #### 2. Final choice of HOG parameters
 
-I tried various combinations of parameters and settled with a stable set:
+Various combinations of parameters were tried and settled with a stable set:
 
 ```
 color_space    = 'YCrCb'    # Can be RGB, HSV, LUV, HLS, YUV, YCrCb
